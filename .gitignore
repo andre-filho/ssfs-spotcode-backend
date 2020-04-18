@@ -10,7 +10,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
-!/tmp/seed_files_v2
+!/tmp/seed_files
 !/log/.keep
 !/tmp/.keep
 

@@ -3,5 +3,5 @@ class Song < ApplicationRecord
 
   has_one_attached :file
 
-  validates :title, presence :true
+  validates :title, presence: true
 end

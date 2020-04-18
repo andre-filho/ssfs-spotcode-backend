@@ -5,7 +5,7 @@ class Album < ApplicationRecord
   has_many :songs
   has_one_attached :cover
 
-  validates :title, presence :true
-  validates :date, presence :true
+  validates :title, presence: true
+  validates :date, presence: true
 
 end
