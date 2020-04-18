@@ -11,6 +11,8 @@ services:
       - default
     depends_on:
       - api-db
+    environment: 
+      - DEVISE_JWT_SECRET_KEY=cb623dd0f04882c1773f72407c03ae4cb0ffab200b2a6b424fa486bb14138898a3c18eb3ca6ef9be68233b1f8d5c4b58d0555aeb2cc2fc9a58aeef0bfb15a544
 
   api-db:
     container_name: api-db
