@@ -4,6 +4,7 @@ services:
     build: .
     volumes:
       - .:/ssfs-spotcode
+      - bun:/bun
     ports:
       - 3000:3000
     networks:
@@ -26,3 +27,7 @@ services:
 
 networks:
   ssfs-spotcode:
+
+volumes: 
+    bun:
+        
