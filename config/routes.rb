@@ -3,7 +3,8 @@ Rails.application.routes.draw do
              controllers: {
                sessions: 'sessions',
                registrations: 'registrations'
-             }  resources :songs
+             }
+  resources :songs
   resources :albums
   resources :categories
   resources :artists
