@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :favorites
+  resources :recently_heards
   devise_for :users,
              controllers: {
                sessions: 'sessions',

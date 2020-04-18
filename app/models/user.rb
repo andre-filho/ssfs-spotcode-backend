@@ -7,4 +7,9 @@ class User < ApplicationRecord
   devise :database_authenticatable,
         :jwt_authenticatable,
         jwt_revocation_strategy: JwtBlacklist
+
+  has_many :favorites
+  has_many :recently_heards
+  
+  validates :name, presence: true
 end
